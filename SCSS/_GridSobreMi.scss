@@ -1,0 +1,40 @@
+/*****************GRID CONTAINERS SOBRE MI ********************/
+
+.gridContainerSobremi {
+    display: grid;
+    grid-template-columns: 50% 50%; 
+    grid-template-rows: 0.7fr 1fr;  
+    grid-template-areas: 
+    "img1 textoA"
+    "textoB img2";
+    justify-items: center;
+    align-items: center;
+}
+
+.gridItem {
+    justify-self: center; /*COMUN A TODOS LOS GRIDS*/
+}
+
+.img-sobreMi1{
+    grid-area: img1;
+    overflow-y: hidden;
+
+}
+
+.img-sobreMi2{
+    grid-area: img2;
+}
+
+
+.sobreMi1{
+    grid-area: textoA;
+    align-self: center;
+    margin-right: 40px;
+}
+
+.sobreMi2 {
+    grid-area: textoB;
+    overflow-y: hidden;
+    margin-left: 100px;
+
+}

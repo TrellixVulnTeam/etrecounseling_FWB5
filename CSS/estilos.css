@@ -1,0 +1,217 @@
+@charset "UTF-8";
+:root {
+  /*******************************FUENTES**********************/
+  /*******************************COLORES FUENTES**********************/
+  /*******************************COLORES NAV**********************/
+  /*******************************COLORES HOVER**********************/
+  /*******************************COLORES BACKGROUND**********************/
+  /*******************************COLORES FONT-AWESOME**********************/ }
+
+/*****************RESET********************/
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  overflow-x: hidden;
+  /*Para evitar el scroll horizontal*/
+  scroll-behavior: smooth; }
+
+body {
+  background: #faeddf; }
+
+/*****************HEADERS / PARRAFOS / TITULO SECCIONES / BARRA DE DIVISION********************/
+/*******************************COLORES FUENTES**********************/
+/*******************************COLORES NAV**********************/
+/*******************************FUENTES**********************/
+/*******************************COLORES FUENTES**********************/
+/*******************************COLORES NAV**********************/
+/*******************************COLORES HOVER**********************/
+/*******************************COLORES BACKGROUND**********************/
+/*******************************COLORES FONT-AWESOME**********************/
+h1 {
+  color: #f38ba0;
+  margin-top: 100px;
+  font-weight: bold;
+  font-size: 150px;
+  font-family: "Varela Round", sans-serif;
+  text-align: center;
+  padding: 400px; }
+  h1 a:hover {
+    transition: 0.5s;
+    color: #f38ba0; }
+
+h2 {
+  font-family: "Varela Round", sans-serif;
+  font-weight: bolder;
+  font-size: 45px;
+  color: #22818a;
+  margin-top: 100px;
+  margin-bottom: 50px; }
+
+h3 {
+  font-family: "Didact Gothic", sans-serif;
+  font-size: 40px;
+  vertical-align: middle;
+  color: #f38ba0;
+  text-decoration: inherit; }
+
+p {
+  font-family: "Hind", sans-serif;
+  font-size: 20px;
+  overflow: hidden; }
+
+.tituloSecciones {
+  font-family: "Varela Round", sans-serif;
+  color: #f38ba0;
+  font-weight: bold;
+  font-size: 45px;
+  text-align: center;
+  background-color: white; }
+
+.footerÊtre {
+  color: #f38ba0;
+  font-size: 30px; }
+
+/*****************GRID CONTAINERS SOBRE MI ********************/
+.gridContainerSobremi {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 0.7fr 1fr;
+  grid-template-areas: "img1 textoA" "textoB img2";
+  justify-items: center;
+  align-items: center; }
+
+.gridItem {
+  justify-self: center;
+  /*COMUN A TODOS LOS GRIDS*/ }
+
+.img-sobreMi1 {
+  grid-area: img1;
+  overflow-y: hidden; }
+
+.img-sobreMi2 {
+  grid-area: img2; }
+
+.sobreMi1 {
+  grid-area: textoA;
+  align-self: center;
+  margin-right: 40px; }
+
+.sobreMi2 {
+  grid-area: textoB;
+  overflow-y: hidden;
+  margin-left: 100px; }
+
+/***************************GRID CONTAINER PUBLICACIONES*****************/
+.gridContainerPublicaciones {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 0.7fr 1fr;
+  grid-template-areas: "img3 textoC" "textoD img4";
+  justify-items: center;
+  align-items: center;
+  width: 100vw; }
+
+.img-publicacion1 {
+  grid-area: img3; }
+
+.img-publicacion2 {
+  grid-area: img4; }
+
+.publicacion1 {
+  grid-area: textoC;
+  align-self: center;
+  margin-right: 40px; }
+
+.publicacion2 {
+  grid-area: textoD;
+  align-self: left;
+  margin-left: 80px; }
+
+/****************FONTAWESOME****************/
+.fas, .fa {
+  /*Clase aparte para el tamaño del boton al top*/
+  font-size: 60px; }
+
+.arrow-to-top {
+  overflow-y: hidden;
+  color: var(--color-arrow-top-top); }
+
+/****************BOTON AL TOP****************/
+.btnTop {
+  display: inline-block;
+  position: fixed;
+  bottom: 20px;
+  right: 40px; }
+
+/****************FOOTER****************/
+.footer {
+  padding: 50px;
+  background-color: var(--color-nav); }
+
+/****************MEDIA QUERY****************/
+@media (max-width: 1024px) {
+  /*iPad PRO*/
+  img {
+    /*IMG Grids*/
+    margin-top: 70px;
+    width: 100%; }
+  a {
+    font-size: 20px; }
+  h1, .tituloSecciones {
+    font-size: 30px; }
+  h2 {
+    font-size: 25px; }
+  h3 {
+    font-size: 20px; }
+  p {
+    font-size: 15px; }
+  .fab, .fa {
+    /*Iconos Contacto, Facebook, IG y Linkedin*/
+    font-size: 50px; }
+  .fas, .fa {
+    font-size: 35px;
+    /*Boton al top*/ } }
+
+@media (max-width: 768px) {
+  img {
+    /*IMG Grids*/
+    margin-top: 70px;
+    width: 120%; }
+  a {
+    font-size: 15px; }
+  h1, .tituloSecciones {
+    font-size: 25px; }
+  h2 {
+    font-size: 20px; }
+  h3 {
+    font-size: 10px; }
+  p {
+    font-size: 10px; }
+  .fab, .fa {
+    /*Iconos Contacto, Facebook, IG y Linkedin*/
+    font-size: 40px; }
+  .fas, .fa {
+    font-size: 30px; }
+  .footer p {
+    font-size: 20px; } }
+
+@media screen and (max-width: 375px) {
+  /*Telefono promedio*/
+  .gridContainerSobremi,
+  .gridContainerPublicaciones,
+  .gridContainerRedes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+  img {
+    margin-top: 70px;
+    width: 100%; }
+  h1, .tituloSecciones {
+    font-size: 25px; }
+  h2 {
+    font-size: 15px; }
+  h3 {
+    font-size: 8px; }
+  p {
+    font-size: 4px; } }

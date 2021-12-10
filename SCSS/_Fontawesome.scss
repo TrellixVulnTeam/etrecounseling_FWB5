@@ -1,0 +1,10 @@
+/****************FONTAWESOME****************/
+ 
+.fas, .fa { /*Clase aparte para el tamaño del boton al top*/
+    font-size: 60px;
+}
+
+.arrow-to-top {
+    overflow-y: hidden;
+    color: var(--color-arrow-top-top);
+}
