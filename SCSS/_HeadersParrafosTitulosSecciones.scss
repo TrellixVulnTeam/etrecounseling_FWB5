@@ -79,6 +79,15 @@ p {
     overflow: hidden;
 }
 
+p {
+    &.colorForm {
+        color: $color-h2;
+    }
+
+    &.Redes {
+        color: $color-h2;
+    }
+}
 
 .tituloSecciones {
     font-family: $fuente-header;
@@ -95,3 +104,4 @@ p {
     font-size: 30px;
 
 }
+

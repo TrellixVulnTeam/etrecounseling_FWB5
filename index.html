@@ -30,23 +30,37 @@
     <title>Être Counseling</title>
 </head>
 <body>
-    <header id="titulo" class="d-flex justify-content-center">
+    <header id="titulo" class="container-fluid">
             <div class="row">   
-                <a class="text-decoration-none" href="#nav"><h1 class="col animate__animated animate__fadeInDown display-1" style="min-height: 100vh;">Etre counseling</h1></a>
+                    <h1 class="col animate__animated animate__fadeInDown display-1" style="min-height: 100vh;">Etre counseling</h1>
             </div>     
     </header>
-    <!--------------------------------------------NAV----------------------------------------->
-    <section id="nav">
+<!--------------------------------------------NAV----------------------------------------------->
+    <section class="Navbar">
+        <ul class="nav justify-content-center fixed-top h3 animate__animated animate__fadeInDown" style="background-color: rgb(254, 245, 237);">
+            <li class="nav-item">
+                <a class="nav-link active text-decoration-none" style="color: rgb(243, 139, 160);" aria-current="page" href="#titulo">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active text-decoration-none" style="color: rgb(243, 139, 160);" aria-current="page" href="#sobreMi">Sobre Mi</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-decoration-none" style="color: rgb(243, 139, 160);" href="#publicaciones">Publicaciones</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-decoration-none" style="color: rgb(243, 139, 160);" href="#contacto">Contacto</a>
+            </li>
+        </ul>   
     </section>
-    <!--------------------------------------------SOBRE MI----------------------------------------->
-    <div id="sobreMi">
-        <h2 class="tituloSecciones"><strong>Sobre mi</strong></h2>
-    </div>
-    <div class="gridContainerSobremi" style="min-height: 100vh;">
-            <div class="gridItem img-sobreMi1">
-                <img class="animate__animated animate__fadeInLeft" src="imagenes/girl-with-objects-around-her-by-oblik-studio.png" alt="imagen">
+ <!--------------------------------------------SOBRE MI----------------------------------------->
+ <div id="sobreMi" class="container-fluid">
+    <h2 class="tituloSecciones"><strong>Sobre Mi</strong></h2>
+</div>
+<div class="d-flex flex-md-row  row justify-content-center">
+            <div class="col">
+                <img class="img-fluid imgSobreMi_1 animate__animated animate__fadeInLeft" src="imagenes/girl-with-objects-around-her-by-oblik-studio.png" alt="imagen">
             </div>
-            <div class="gridItem sobreMi1 animate__animated animate__fadeInRight">
+            <div class="col align-self-center mr animate__animated animate__fadeInRight">
                 <h2>¡Hola a todes!</h2>
                     <p>Hoy voy a presentarme 🙋🏽‍♀️ <br>
                         Mi nombre es Agustina Maciel, y soy de Buenos Aires, Argentina. 
@@ -55,9 +69,12 @@
                         Acá también podrán conocer temas relacionados con la prevención en salud mental, vínculos y más sobre mí.
                         </p>
             </div>
-            <div class="gridItem sobreMi2">
+    </div>
+    <div class="d-flex  row justify-content-center " style="min-height: 100vh;">
+
+            <div class="col align-self-center ml">
                 <h2>¿Por qué elijo ser counselor?</h2>
-                    <p>Quiero hablarles de por qué y para qué elegí hacer esto.
+                    <p class="text-start text-wrap">Quiero hablarles de por qué y para qué elegí hacer esto.
                     <br>
                     ⚡Fue un largo recorrido interno, pero había una necesidad de búsqueda y la pregunta que resonaba mucho en mí era: ¿para qué estoy acá?
                     Siento que tengo una misión, pero, ¿Cuál es?
@@ -69,71 +86,83 @@
                     Estoy para ayudarte 🙌🏼<br><br>
                     <em>Agustina.</em></p>
             </div>        
-            <div class="gridItem img-sobreMi2">
-                <img src="imagenes/girl-sitting-on-books-with-laptop-by-oblik-studio.png" alt="imagen">
+            <div class="col align-self-center">
+                <img class="img-fluid" src="imagenes/girl-sitting-on-books-with-laptop-by-oblik-studio.png" alt="imagen">
             </div>
     </div>
 
     <!--------------------------------------------PUBLICACIONES----------------------------------------->
-
-    <div id="publicaciones">
-        <h2 class="tituloSecciones"><strong>Publicaciones</strong></h2>
+    <div id="publicaciones" class="container-fluid">
+            <h2 class="tituloSecciones"><strong>Publicaciones</strong></h2>
     </div>
-    <div class="gridContainerPublicaciones">
-            <div class="gridItem img-publicacion1">
-                <img src="imagenes/girl-sitting-on-armchair-with-laptop-by-oblik-studio.png">
-            </div>
-            <div class="gridItem publicacion1">
-                <h2>¿Qué es el counseling?</h2>
-                <p>
-                    La gran pregunta que muches deben hacerse es: ¿qué es el counseling?
-                    El counseling es una profesión de ayuda que trabaja desde el enfoque humanista.
-                    Su misión es acompañar a las personas en momentos de conflicto, crisis y cambios, facilitando así la autoexploración y el despliegue de herramientas internas.
-                    La idea del counseling es que cuentes con un espacio seguro donde analizarte y tratar de desarrollar las herramientas que necesitás para enfrentar las situaciones que te generan conflictos.
-                    Si estás atravesando un momento de sobrecarga, angustia, o sentís la necesidad de un espacio de escucha, este enfoque es el que necesitás y acá estoy para ayudarte.
-                    Consultame por mensaje privado.
-                </p>
-            </div>
-            <div class="gridItem publicacion2">
-                <h2>¿Por qué deberias elegir el counseling?</h2>
-                <p>
-                ¡Hola a todes!.
-                Hoy te voy a contar algo más sobre el counseling, por si aún estás buscando ese espacio seguro de escucha, pero no estás tan convencide aún de qué se trata.
-                ¿Por qué debería elegir el counseling?
-                O, más precisamente, ¿para qué debería elegir el counseling? ✨
-                Todes necesitamos un espacio y un momento donde podamos explayar lo que nos pasa, ya sea con un conflicto, con sensaciones que nos estén generando malestar, o con un cambio que estamos buscando y no sabemos cómo iniciar.
-                A veces utilizamos de descarga o escucha amigues, familia o personas cercanas que tienen una mirada subjetiva de nosotres y que, a partir del cariño y la ayuda, nos terminan diciendo qué hacer, cómo hacerlo o nos aconsejan.
-                Desde el counseling, partimos de la base de que la experiencia del individuo es única lo que, como profesionales, nos lleva a ofrecer un espacio de encuentro y autoconocimiento, validando esas experiencias, trabajando desde la objetividad para llevar a la persona a resolver sus conflictos que traiga, sin subestimarle e intentando maximizar el nivel de competencia de la persona.
-                Si esto te resuena y estas necesitando un espacio para vos, contáctame.
-                </p>
+        <div class="d-flex row justify-content-center">
+                <div class="col align-self-center">
+                    <img class="img-fluid" src="imagenes/girl-sitting-on-armchair-with-laptop-by-oblik-studio-B.png">
                 </div>
-            <div class="gridItem img-publicacion2">
-                <img src="imagenes/girl-sitiing-on-table-conducting-an-interview-by-oblik-studio.png"> 
+                <div class="col align-self-center">
+                    <h2>¿Qué es el counseling?</h2>
+                    <p>
+                        La gran pregunta que muches deben hacerse es: ¿qué es el counseling?
+                        El counseling es una profesión de ayuda que trabaja desde el enfoque humanista.
+                        Su misión es acompañar a las personas en momentos de conflicto, crisis y cambios, facilitando así la autoexploración y el despliegue de herramientas internas.
+                        La idea del counseling es que cuentes con un espacio seguro donde analizarte y tratar de desarrollar las herramientas que necesitás para enfrentar las situaciones que te generan conflictos.
+                        Si estás atravesando un momento de sobrecarga, angustia, o sentís la necesidad de un espacio de escucha, este enfoque es el que necesitás y acá estoy para ayudarte.
+                        Consultame por mensaje privado.
+                    </p>
             </div>
-    </div>
 
-    <fieldset class="container justify-content-center">
-        <div class="row">
-            <div class="col">
-                <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-            </div>
-            <div class="col">
-                <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </div>
         </div>
-    </fieldset>
-
-
-    <!--------------------------------------------BOTON FOOTER----------------------------------------->
-    <div class="btnTop">
-        <a href="#titulo">
-            <span class="arrow-to-top"><i class="fas fa-chevron-circle-up"></i></span>
-        </a>
+        <div class="d-flex row justify-content-center">
+                <div class="col">
+                    <h2>¿Por qué deberias elegir el counseling?</h2>
+                    <p>
+                    ¡Hola a todes!.
+                    Hoy te voy a contar algo más sobre el counseling, por si aún estás buscando ese espacio seguro de escucha, pero no estás tan convencide aún de qué se trata.
+                    ¿Por qué debería elegir el counseling?
+                    O, más precisamente, ¿para qué debería elegir el counseling? ✨
+                    Todes necesitamos un espacio y un momento donde podamos explayar lo que nos pasa, ya sea con un conflicto, con sensaciones que nos estén generando malestar, o con un cambio que estamos buscando y no sabemos cómo iniciar.
+                    A veces utilizamos de descarga o escucha amigues, familia o personas cercanas que tienen una mirada subjetiva de nosotres y que, a partir del cariño y la ayuda, nos terminan diciendo qué hacer, cómo hacerlo o nos aconsejan.
+                    Desde el counseling, partimos de la base de que la experiencia del individuo es única lo que, como profesionales, nos lleva a ofrecer un espacio de encuentro y autoconocimiento, validando esas experiencias, trabajando desde la objetividad para llevar a la persona a resolver sus conflictos que traiga, sin subestimarle e intentando maximizar el nivel de competencia de la persona.
+                    Si esto te resuena y estas necesitando un espacio para vos, contáctame.
+                    </p>
+                </div>
+                <div class="col align-self-center">
+                    <img class="img-fluid" src="imagenes/girl-sitiing-on-table-conducting-an-interview-by-oblik-studio-A.png"> 
+                </div>
+        </div>
     </div>
-    
-    <!--------------------------------------------FOOTER----------------------------------------->
+    <!--------------------------------------------CONTACTO----------------------------------------->
+    <div id="contacto" class="container-fluid">
+        <h2 class="tituloSecciones"><strong>Contactame!</strong></h2>
+    </div>
+    <div class="container"> 
+        <div class="d-flex justify-content-between bd-highlight mb-2">
+            <div class="p-2 bd-highlight"><a target="_blank" href="https://www.instagram.com"><i class="fab fa-instagram logo" ></a></i></div>
+            <div class="p-2 bd-highlight"><a target="_blank" href="https://www.facebook.com"><i class="fab fa-facebook logo"></a></i></div>
+            <div class="p-2 bd-highlight"><a target="_blank" href="https://www.linkedin.com"><i class="fab fa-linkedin-in logo"></a></i></div>
+          </div>        
+        <form>
+            <div class="row justify-content-center">
+                <div class="mb-3">
+                    <label for="Name" class="form-label overflow-hidden"><p class="h2 colorForm">Nombre: </p></label>
+                    <input type="text" class="form-control" id="Name" aria-describedby="Name" placeholder="Nombre">
+                </div>  
+                <div class="mb-3">
+                    <label for="LastName" class="form-label h3 overflow-hidden"><p class="h2 colorForm">Apellido: </p></label>
+                    <input type="text" class="form-control" id="LastName" aria-describedby="LastName" placeholder="Apellido">
+                </div>  
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label h3 overflow-hidden"><p class="h2 colorForm">Email: </p></label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Tu email">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label h3 overflow-hidden"><p class="h2 colorForm">Mensaje: </p></label>
+                    <textarea class="form-control " id="exampleFormControlTextarea1" rows="3"></textarea>            
+                </div>
+            </div>
+            <button class="btn btn-outline-success me-2" type="button">Enviar</button>            
+        </form>
+    </div>
     <!--------------------------------------------LIBRERIAS Y FRAMEWORKS JS----------------------------------------->
     <script src="js/wow.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
