@@ -1,8 +1,15 @@
 /****************FONTAWESOME****************/
+@mixin ColoresFuente ($color) {
+    color: $color;
+}
+
+@mixin TamañoFuente ($f-size) {
+    font-size: $f-size;
+}
 
 $color-h2: #227B8A;
 
 .logo {
-    color: $color-h2;
-    font-size: 80px;
+    @include ColoresFuente($color-h2);
+    @include TamañoFuente (80px)
 }

@@ -38,70 +38,88 @@
     $colorArrowToTop: rgb(216, 110, 110);
     $colorFormulario: rgba(233, 166, 166, .5);
 
+@mixin ColoresFuente ($color)  {
+    color: $color;
+}
 
+@mixin ColoresBackground ($color) {
+    background-color: $color;
+}
+
+@mixin Fuentes ($fuente) {
+    font-family: $fuente;
+}
+
+@mixin TamañoFuente ($f-size) {
+    font-size: $f-size;
+}
+
+$h1-weight: (
+        font-weight: bolder
+);
 
 h1 {
-    color: $color-h1;
+    @include ColoresFuente($color-h1);
+    @include Fuentes($fuente-header);
+    @include TamañoFuente (150px);
     margin-top: 100px;
-    font-weight: bold;
-    font-size: 150px;
-    font-family:  $fuente-header;
-    text-align: center ;
+    text-align: center;
     padding: 400px;
+    content: map-get($h1-weight, font-weight);
     & a:hover {
             transition: 0.5s;
-            color: $color-links-nav;      
+            @include ColoresFuente($color-links-nav);      
     }
 }
 
 h2 {
-    font-family: $fuente-header;
+    @include Fuentes($fuente-header);
+    @include ColoresFuente($color-h2);
+    @include TamañoFuente (45px);
     font-weight: bolder;
-    font-size: 45px;
-    color: $color-h2;
     margin-top: 100px;
     margin-bottom: 50px;
 }
 
 h3 {
-    font-family: $fuente-publicaciones-nav;
-    font-size: 40px;
+    @include Fuentes($fuente-publicaciones-nav);
+    @include ColoresFuente($color-h1);
+    @include TamañoFuente (40px);
     vertical-align: middle;
-    color: $color-h1;
     text-decoration: inherit;
 }
 
 
 
 p {
-    font-family: $fuente-publicaciones;
-    font-size: 20px;
+    @include Fuentes($fuente-publicaciones);
+    @include TamañoFuente (20px);
     overflow: hidden;
 }
 
 p {
     &.colorForm {
-        color: $color-h2;
+       @include ColoresFuente($color-h2);
     }
 
     &.Redes {
-        color: $color-h2;
+        @include ColoresFuente($color-h2);
     }
 }
 
 .tituloSecciones {
-    font-family: $fuente-header;
-    color: $color-h1;
+    @include Fuentes($fuente-header);
+    @include ColoresFuente($color-h1);
+    @include ColoresBackground ($colorBackgroundSecciones);
+    @include TamañoFuente (45px);
     font-weight: bold;
-    font-size: 45px;
     text-align: center ;
-    background-color: $colorBackgroundSecciones;
 }
 
 
 .footerÊtre {
-    color: $color-links-nav;
-    font-size: 30px;
+    @include ColoresFuente($color-links-nav);
+    @include TamañoFuente (30px);
 
 }
 

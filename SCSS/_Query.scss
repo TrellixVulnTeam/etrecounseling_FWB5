@@ -1,5 +1,22 @@
 /****************MEDIA QUERY****************/
 
+@mixin ColoresFuente ($color)  {
+    color: $color;
+}
+
+@mixin ColoresBackground ($color) {
+    background-color: $color;
+}
+
+@mixin Fuentes ($fuente) {
+    font-family: $fuente;
+}
+
+@mixin TamañoFuente ($f-size) {
+    font-size: $f-size;
+}
+
+
 @media (max-width: 1024px) { /*iPad PRO*/
 
     .gridContainerSobremi,
@@ -15,22 +32,22 @@
     }
 
     
-    a  {font-size: 20px}
-    h1, .tituloSecciones {font-size: 30px;}
-    h2 {font-size: 25px;}
-    h3 {font-size: 25px;}
-    p {font-size: 15px;}
+    a  {@include TamañoFuente (20px);}
+    h1, .tituloSecciones {@include TamañoFuente (30px);}
+    h2 {@include TamañoFuente (25px);}
+    h3 {@include TamañoFuente (25px);}
+    p {@include TamañoFuente (15px);}
     
     .imgSobreMi_1 {
         margin-bottom: 20px;
     }
     
     .fab, .fa { /*Iconos Contacto, Facebook, IG y Linkedin*/
-        font-size: 50px;
+        @include TamañoFuente (50px);
     }
 
     .fas, .fa {
-        font-size: 35px; /*Boton al top*/
+        @include TamañoFuente (35px); /*Boton al top*/
     }
 
     .ml {
@@ -46,19 +63,61 @@
 
  @media (max-width: 768px) {
 
-    a  {font-size: 15px}
-    h1, .tituloSecciones {font-size: 25px;}
-    h2 {font-size: 20px;}
-    h3 {font-size: 15px;}
-    p {font-size: 15px;}
+    h1, .tituloSecciones {@include TamañoFuente (25px);}
+    h2 {@include TamañoFuente (20px);}
+
+    h3, 
+    p, 
+    a {@include TamañoFuente (15px);}
+
+    .gridContainerSobremi,
+    .gridContainerPublicaciones,
+    .gridContainerRedes{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        word-wrap: normal;
+    }
+    .ocultar {
+        display: none;
+    }
+    img {
+        display: none;
+      }
+    
 
  }
+
+@media screen and (max-width: 500px) {
+    h1, .tituloSecciones {@include TamañoFuente (25px);}
+    h2 {@include TamañoFuente (20px);}
+
+    h3, 
+    p, 
+    a {@include TamañoFuente (15px);}
+
+    .gridContainerSobremi,
+    .gridContainerPublicaciones,
+    .gridContainerRedes{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        word-wrap: normal;
+    }
+    .ocultar {
+        display: none;
+    }
+    img {
+        display: none;
+      }
+    
+}
 
 @media screen and(max-width: 375px) { /*Telefono promedio*/
      
     .Navbar {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: space-around;
     }
 
@@ -72,13 +131,11 @@
     }
 
 
-    h1, .tituloSecciones {font-size: 25px;}
-    h2 {font-size: 15px;}
-    h3 {font-size: 8px;}
-    p { font-size: 10px;}
+    h1, .tituloSecciones {@include TamañoFuente (15px);}
+    h2 {@include TamañoFuente (10px);}
+    h3 {@include TamañoFuente (8px);}
+    p {@include TamañoFuente (6px);}
 
-    img {display: none;
-    }
-
-
+    img {display: none;}
+    .ocultar{display: none;}
 }
