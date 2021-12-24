@@ -40,7 +40,7 @@
     </header>
 <!--------------------------------------------NAV----------------------------------------------->
     <section class="Navbar">
-        <ul class="nav justify-content-center fixed-top h3 animate__animated animate__fadeInDown" style="background-color: rgb(254, 245, 237);">
+        <ul class="nav shadow-sm justify-content-center fixed-top h3 animate__animated animate__fadeInDown" style="background-color: rgb(254, 245, 237);">
             <li class="nav-item">
                 <a class="nav-link active text-decoration-none" style="color: rgb(243, 139, 160);" aria-current="page" href="#titulo">Inicio</a>
             </li>
@@ -56,14 +56,14 @@
         </ul>   
     </section>
  <!--------------------------------------------SOBRE MI----------------------------------------->
- <div id="sobreMi" class="container-fluid">
-    <h2 class="tituloSecciones"><strong>Sobre Mi</strong></h2>
+ <div id="sobreMi" class="container-fluid ">
+    <h2 class="tituloSecciones shadow-sm"><strong>Sobre Mi</strong></h2>
 </div>
-<div class="d-flex row justify-content-center ">
+    <div class="d-flex row justify-content-center">
             <div class="col ocultar">
-                <img class="img-fluid imgSobreMi_1 animate__animated animate__fadeInLeft" src="imagenes/girl-with-objects-around-her-by-oblik-studio.png" alt="imagen">
+                <img class="img-fluid imgSobreMi_1" src="imagenes/girl-with-objects-around-her-by-oblik-studio.png" alt="imagen">
             </div>
-            <div class="col align-self-center mr animate__animated animate__fadeInRight">
+            <div class="col  col-sm align-self-center ">
                 <h2>¡Hola a todes!</h2>
                     <p>Hoy voy a presentarme 🙋🏽‍♀️ <br>
                         Mi nombre es Agustina Maciel, y soy de Buenos Aires, Argentina. 
@@ -75,7 +75,7 @@
     </div>
     <div class="d-flex row justify-content-center " style="min-height: 100vh;">
 
-            <div class="col align-self-center">
+            <div class="col col-sm align-self-center">
                 <h2>¿Por qué elijo ser counselor?</h2>
                     <p class="text-start text-wrap">Quiero hablarles de por qué y para qué elegí hacer esto.
                     <br>
@@ -96,7 +96,7 @@
 
     <!--------------------------------------------PUBLICACIONES----------------------------------------->
     <div id="publicaciones" class="container-fluid">
-            <h2 class="tituloSecciones"><strong>Publicaciones</strong></h2>
+            <h2 class="tituloSecciones shadow-sm"><strong>Publicaciones</strong></h2>
     </div>
         <div class="d-flex row justify-content-center">
                 <div class="col ocultar align-self-center">
@@ -116,7 +116,7 @@
 
         </div>
         <div class="d-flex row justify-content-center">
-                <div class="col">
+                <div class="col ">
                     <h2>¿Por qué deberias elegir el counseling?</h2>
                     <p>
                     ¡Hola a todes!.
@@ -136,42 +136,41 @@
     </div>
     <!--------------------------------------------CONTACTO----------------------------------------->
     <div id="contacto" class="container-fluid">
-        <h2 class="tituloSecciones"><strong>Contactame!</strong></h2>
+        <h2 class="tituloSecciones shadow-sm"><strong>Contactame!</strong></h2>
     </div>
-    <div class="container form"> 
+    <div class="container form container-fluid"> 
         <div class="d-flex justify-content-between bd-highlight mb-2">
             <div class="p-2 bd-highlight"><a target="_blank" href="https://www.instagram.com"><i class="fab fa-instagram logo" ></a></i></div>
             <div class="p-2 bd-highlight"><a target="_blank" href="https://www.facebook.com"><i class="fab fa-facebook logo"></a></i></div>
             <div class="p-2 bd-highlight"><a target="_blank" href="https://www.linkedin.com"><i class="fab fa-linkedin-in logo"></a></i></div>
           </div>        
-        <form>
-            <div class="row justify-content-center">
-                <div class="mb-3">
-                    <label for="Name" class="form-label overflow-hidden"><p class="h2 colorForm">Nombre: </p></label>
-                    <input type="text" class="form-control" id="Name" aria-describedby="Name" placeholder="Nombre">
-                </div>  
-                <div class="mb-3">
-                    <label for="LastName" class="form-label h3 overflow-hidden"><p class="h2 colorForm">Apellido: </p></label>
-                    <input type="text" class="form-control" id="LastName" aria-describedby="LastName" placeholder="Apellido">
-                </div>  
-                <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label h3 overflow-hidden"><p class="h2 colorForm">Email: </p></label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Tu email">
+          <form>
+              <div id="Mensaje"></div>        
+              <div class="row justify-content-center">
+                  <div class="mb-3">
+                      <label for="Name" class="form-label overflow-hidden"><p class="h2 colorForm">Nombre: </p></label>
+                      <input type="text" class="form-control" id="Name" aria-describedby="Name" placeholder="Nombre" required>
+                    </div>  
+                    <div class="mb-3">
+                        <label for="LastName" class="form-label h3 overflow-hidden"><p class="h2 colorForm">Apellido: </p></label>
+                        <input type="text" class="form-control" id="LastName" aria-describedby="LastName" placeholder="Apellido">
+                    </div>  
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label h3 overflow-hidden"><p class="h2 colorForm">Email: </p></label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Tu email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label h3 overflow-hidden"><p class="h2 colorForm">Mensaje: </p></label>
+                        <textarea class="form-control " id="exampleFormControlTextarea1" rows="3"></textarea>            
+                    </div>
                 </div>
-                <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label h3 overflow-hidden"><p class="h2 colorForm">Mensaje: </p></label>
-                    <textarea class="form-control " id="exampleFormControlTextarea1" rows="3"></textarea>            
-                </div>
-            </div>
-            <button class="btn btn-outline-success me-2" type="button">Enviar</button>            
-        </form>
-    </div>
-    <!--------------------------------------------LIBRERIAS Y FRAMEWORKS JS----------------------------------------->
-    <script src="js/wow.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-    </script>     
-    <script>new WOW().init();</script>
+                <button id="Enviar" class="btn btn-outline-success me-2 " type="button">Enviar</button>    
+            </form>
+        </div>
+    <!--------------------------------------------Librerias y JS----------------------------------------->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="JS/form.js"></script>
+
 </body>
 </html>
 

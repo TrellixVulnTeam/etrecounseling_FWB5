@@ -16,21 +16,16 @@
     font-size: $f-size;
 }
 
+@media (min-width: 1024px) {.flex-fill {display: none;}}
 
 @media (max-width: 1024px) { /*iPad PRO*/
 
-    .gridContainerSobremi,
-    .gridContainerPublicaciones,
-    .gridContainerRedes{
+
+    .d-flex{
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
-
-    .gridContainerPublicaciones {
-        margin: 0 50px;
-    }
-
     
     a  {@include TamañoFuente (20px);}
     h1, .tituloSecciones {@include TamañoFuente (30px);}
@@ -46,19 +41,6 @@
         @include TamañoFuente (50px);
     }
 
-    .fas, .fa {
-        @include TamañoFuente (35px); /*Boton al top*/
-    }
-
-    .ml {
-        margin-top: 30px;
-        margin-left: 40px;
-    }
-
-    .mr {
-        margin-bottom: 20px;
-        margin-right: 40px;
-    }
 }
 
  @media (max-width: 768px) {
@@ -70,9 +52,7 @@
     p, 
     a {@include TamañoFuente (15px);}
 
-    .gridContainerSobremi,
-    .gridContainerPublicaciones,
-    .gridContainerRedes{
+    .d-flex{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -88,54 +68,24 @@
 
  }
 
-@media screen and (max-width: 500px) {
-    h1, .tituloSecciones {@include TamañoFuente (25px);}
-    h2 {@include TamañoFuente (20px);}
+@media screen and (max-width: 450px) {
+    h1, .tituloSecciones {@include TamañoFuente (10px);}
+    h2 {@include TamañoFuente (10px);}
 
     h3, 
     p, 
-    a {@include TamañoFuente (15px);}
+    a {@include TamañoFuente (20px);}
 
-    .gridContainerSobremi,
-    .gridContainerPublicaciones,
-    .gridContainerRedes{
+    .d-flex{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         word-wrap: normal;
+        padding:  300px;
     }
-    .ocultar {
-        display: none;
-    }
-    img {
-        display: none;
-      }
+
+    .ocultar {display: none;}
+    img {display: none;}
     
 }
 
-@media screen and(max-width: 375px) { /*Telefono promedio*/
-     
-    .Navbar {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-
-    .gridContainerSobremi,
-    .gridContainerPublicaciones,
-    .gridContainerRedes{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        word-wrap: normal;
-    }
-
-
-    h1, .tituloSecciones {@include TamañoFuente (15px);}
-    h2 {@include TamañoFuente (10px);}
-    h3 {@include TamañoFuente (8px);}
-    p {@include TamañoFuente (6px);}
-
-    img {display: none;}
-    .ocultar{display: none;}
-}

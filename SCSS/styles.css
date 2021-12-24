@@ -112,18 +112,17 @@ form {
 }
 
 /****************MEDIA QUERY****************/
+@media (min-width: 1024px) {
+  .flex-fill {
+    display: none;
+  }
+}
 @media (max-width: 1024px) {
   /*iPad PRO*/
-  .gridContainerSobremi,
-.gridContainerPublicaciones,
-.gridContainerRedes {
+  .d-flex {
     display: flex;
     flex-direction: column;
     justify-content: center;
-  }
-
-  .gridContainerPublicaciones {
-    margin: 0 50px;
   }
 
   a {
@@ -154,21 +153,6 @@ form {
     /*Iconos Contacto, Facebook, IG y Linkedin*/
     font-size: 50px;
   }
-
-  .fas, .fa {
-    font-size: 35px;
-    /*Boton al top*/
-  }
-
-  .ml {
-    margin-top: 30px;
-    margin-left: 40px;
-  }
-
-  .mr {
-    margin-bottom: 20px;
-    margin-right: 40px;
-  }
 }
 @media (max-width: 768px) {
   h1, .tituloSecciones {
@@ -185,9 +169,7 @@ a {
     font-size: 15px;
   }
 
-  .gridContainerSobremi,
-.gridContainerPublicaciones,
-.gridContainerRedes {
+  .d-flex {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -202,76 +184,34 @@ a {
     display: none;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 450px) {
   h1, .tituloSecciones {
-    font-size: 25px;
-  }
-
-  h2 {
-    font-size: 20px;
-  }
-
-  h3,
-p,
-a {
-    font-size: 15px;
-  }
-
-  .gridContainerSobremi,
-.gridContainerPublicaciones,
-.gridContainerRedes {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    word-wrap: normal;
-  }
-
-  .ocultar {
-    display: none;
-  }
-
-  img {
-    display: none;
-  }
-}
-@media screen and (max-width: 375px) {
-  /*Telefono promedio*/
-  .Navbar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-
-  .gridContainerSobremi,
-.gridContainerPublicaciones,
-.gridContainerRedes {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    word-wrap: normal;
-  }
-
-  h1, .tituloSecciones {
-    font-size: 15px;
+    font-size: 10px;
   }
 
   h2 {
     font-size: 10px;
   }
 
-  h3 {
-    font-size: 8px;
+  h3,
+p,
+a {
+    font-size: 20px;
   }
 
-  p {
-    font-size: 6px;
-  }
-
-  img {
-    display: none;
+  .d-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    word-wrap: normal;
+    padding: 300px;
   }
 
   .ocultar {
+    display: none;
+  }
+
+  img {
     display: none;
   }
 }/*# sourceMappingURL=styles.css.map */
