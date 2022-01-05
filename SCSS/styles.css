@@ -29,6 +29,14 @@ body {
   margin: 0 100px;
 }
 
+.menu {
+  transition: transform 0.7s;
+}
+
+.menu:hover {
+  transform: translateX(10px);
+}
+
 /*****************HEADERS / PARRAFOS / TITULO SECCIONES / BARRA DE DIVISION********************/
 /*******************************COLORES FUENTES**********************/
 /*******************************COLORES NAV**********************/

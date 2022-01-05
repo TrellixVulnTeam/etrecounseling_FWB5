@@ -1,4 +1,13 @@
-.navbar {
-    padding: 400px;
+// .navbar {
+//     padding: 400px;
     
-}
+// }
+
+.menu {
+    transition: transform 0.7s;
+}    
+
+.menu:hover {
+    transform: translateX(10px);
+}    
+

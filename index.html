@@ -42,16 +42,16 @@
     <section class="Navbar">
         <ul class="nav shadow-sm justify-content-center fixed-top h3 animate__animated animate__fadeInDown" style="background-color: rgb(254, 245, 237);">
             <li class="nav-item">
-                <a class="nav-link active text-decoration-none" style="color: rgb(243, 139, 160);" aria-current="page" href="#titulo">Inicio</a>
+                <a class="menu nav-link active text-decoration-none" style="color: rgb(243, 139, 160);" aria-current="page" href="#titulo">Inicio</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link active text-decoration-none" style="color: rgb(243, 139, 160);" aria-current="page" href="#sobreMi">Sobre Mi</a>
+                <a class="menu nav-link active text-decoration-none" style="color: rgb(243, 139, 160);" aria-current="page" href="#sobreMi">Sobre Mi</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-decoration-none" style="color: rgb(243, 139, 160);" href="#publicaciones">Publicaciones</a>
+                <a class="menu nav-link text-decoration-none" style="color: rgb(243, 139, 160);" href="#publicaciones">Publicaciones</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-decoration-none" style="color: rgb(243, 139, 160);" href="#contacto">Contacto</a>
+                <a class="menu nav-link text-decoration-none" style="color: rgb(243, 139, 160);" href="#contacto">Contacto</a>
             </li>
         </ul>   
     </section>
@@ -157,14 +157,14 @@
                     </div>  
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label h3 overflow-hidden"><p class="h2 colorForm">Email: </p></label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Tu email" required>
+                        <input type="email" class="form-control" id="Email" aria-describedby="emailHelp" placeholder="Tu email" required>
                     </div>
                     <div class="mb-3">
-                        <label for="exampleFormControlTextarea1" class="form-label h3 overflow-hidden"><p class="h2 colorForm">Mensaje: </p></label>
-                        <textarea class="form-control " id="exampleFormControlTextarea1" rows="3"></textarea>            
+                        <label for="mensaje" class="form-label h3 overflow-hidden"><p class="h2 colorForm">Mensaje: </p></label>
+                        <textarea class="form-control " id="mensaje" rows="3"></textarea>            
                     </div>
                 </div>
-                <button id="Enviar" class="btn btn-outline-success me-2 " type="button">Enviar</button>    
+                <button id="Enviar" onclick="formStorage()" class="btn btn-outline-success me-2 " type="button">Enviar</button>    
             </form>
         </div>
     <!--------------------------------------------Librerias y JS----------------------------------------->
