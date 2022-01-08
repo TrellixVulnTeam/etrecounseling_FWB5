@@ -11,23 +11,6 @@ const EnviarFormulario = () => {
     });
 }
 
-const formStorage = () => {
-    [
-        {
-    "User" : 
-        sessionStorage.setItem("User", $("#Name").val())
-        },
-
-        {
-    "Email" : 
-        sessionStorage.setItem("Email", $("#Email").val())
-        }
-    ]
-
-}
-
-
 EnviarFormulario ();
-formStorage();
 
 
