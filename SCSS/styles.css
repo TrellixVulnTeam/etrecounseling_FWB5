@@ -114,6 +114,10 @@ p.Redes {
   font-size: 80px;
 }
 
+.futer {
+  background-color: red;
+}
+
 /****************FOOTER****************/
 form {
   margin: 80px 0;

@@ -25,6 +25,25 @@ body {
 .d-flex {
   margin: 0 100px; }
 
+.navbar-color {
+  background-color: white; }
+
+.collapse-color {
+  background-color: #fef5ed; }
+
+.navbar-toggler {
+  background-color: #faeddf; }
+
+.btn-color {
+  background-color: #faeddf;
+  opacity: 1; }
+
+.fas, .fa-bars {
+  color: #f38ba0; }
+
+.navbar-toggler-icon {
+  opacity: 0.5; }
+
 /*****************HEADERS / PARRAFOS / TITULO SECCIONES / BARRA DE DIVISION********************/
 /*******************************COLORES FUENTES**********************/
 /*******************************COLORES NAV**********************/
@@ -97,16 +116,21 @@ form {
   margin: 80px 0; }
 
 /****************MEDIA QUERY****************/
+@media (min-width: 1024px) {
+  .flex-fill {
+    display: none; }
+  #NavMobile {
+    display: none; } }
+
 @media (max-width: 1024px) {
   /*iPad PRO*/
-  .gridContainerSobremi,
-  .gridContainerPublicaciones,
-  .gridContainerRedes {
+  .NavDesktop {
+    display: none; }
+  .d-flex {
     display: flex;
     flex-direction: column;
-    justify-content: center; }
-  .gridContainerPublicaciones {
-    margin: 0 50px; }
+    justify-content: center;
+    margin: 0 30px; }
   a {
     font-size: 20px; }
   h1, .tituloSecciones {
@@ -116,86 +140,69 @@ form {
   h3 {
     font-size: 25px; }
   p {
-    font-size: 15px; }
-  .imgSobreMi_1 {
-    margin-bottom: 20px; }
+    font-size: 18px; }
+  img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
   .fab, .fa {
     /*Iconos Contacto, Facebook, IG y Linkedin*/
-    font-size: 50px; }
-  .fas, .fa {
-    font-size: 35px;
-    /*Boton al top*/ }
-  .ml {
-    margin-top: 30px;
-    margin-left: 40px; }
-  .mr {
-    margin-bottom: 20px;
-    margin-right: 40px; } }
+    font-size: 50px; } }
 
 @media (max-width: 768px) {
   h1, .tituloSecciones {
     font-size: 25px; }
   h2 {
-    font-size: 20px; }
+    font-size: 24px; }
   h3,
   p,
   a {
     font-size: 15px; }
-  .gridContainerSobremi,
-  .gridContainerPublicaciones,
-  .gridContainerRedes {
+  .d-flex {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    word-wrap: normal; }
-  .ocultar {
-    display: none; }
-  img {
-    display: none; } }
+    word-wrap: normal;
+    margin: 0 30px; } }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 450px) {
   h1, .tituloSecciones {
     font-size: 25px; }
   h2 {
-    font-size: 20px; }
+    font-size: 25px; }
   h3,
   p,
   a {
     font-size: 15px; }
-  .gridContainerSobremi,
-  .gridContainerPublicaciones,
-  .gridContainerRedes {
+  .d-flex {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    word-wrap: normal; }
+    word-wrap: normal;
+    letter-spacing: 1px;
+    margin: 0 20px; }
   .ocultar {
     display: none; }
   img {
     display: none; } }
 
 @media screen and (max-width: 375px) {
-  /*Telefono promedio*/
-  .Navbar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around; }
-  .gridContainerSobremi,
-  .gridContainerPublicaciones,
-  .gridContainerRedes {
+  h1, .tituloSecciones {
+    font-size: 25px; }
+  h2 {
+    font-size: 20px; }
+  h3,
+  p,
+  a {
+    font-size: 15px; }
+  .d-flex {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    word-wrap: normal; }
-  h1, .tituloSecciones {
-    font-size: 15px; }
-  h2 {
-    font-size: 10px; }
-  h3 {
-    font-size: 8px; }
-  p {
-    font-size: 6px; }
-  img {
-    display: none; }
+    word-wrap: normal;
+    letter-spacing: 0.5px;
+    margin: 0 15px; }
   .ocultar {
+    display: none; }
+  img {
     display: none; } }

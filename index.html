@@ -35,11 +35,38 @@
 <body>
     <header id="titulo" class="container-fluid">
             <div class="row">   
-                    <h1 class="col animate__animated animate__fadeInDown display-1" style="min-height: 100vh;">Etre counseling</h1>
+                    <h1 class="col animate__animated animate__fadeInDown display-1">être counseling</h1>
             </div>     
     </header>
 <!--------------------------------------------NAV----------------------------------------------->
-    <section class="Navbar">
+<section id="NavMobile" class="shadow-sm fixed-top">
+    <div class="collapse " id="navbarToggleExternalContent">
+        <div class="collapse-color p-4">
+            <ul class="d-flex flex-column justify-content-center h3 ">
+                <li>
+                    <a class="menu  nav-link active text-decoration-none" style="color: rgb(243, 139, 160);" aria-current="page" href="#titulo">Inicio</a>
+                </li>
+                <li>
+                    <a class="menu  nav-link active text-decoration-none" style="color: rgb(243, 139, 160);" aria-current="page" href="#sobreMi">Sobre Mi</a>
+                </li>
+                <li>
+                    <a class="menu  nav-link text-decoration-none" style="color: rgb(243, 139, 160);" href="#publicaciones">Publicaciones</a>
+                </li>
+                <li>
+                    <a class="menu  nav-link text-decoration-none" style="color: rgb(243, 139, 160);" href="./contact.html">Contacto</a>
+                </li>
+            </ul>   
+        </div>
+    </div>
+    <nav class="navbar navbar-color">
+        <div class="container-fluid">
+        <button class="btn btn-color" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars "></i>        </button>
+        </div>
+    </nav>
+</section>
+
+<section class="NavDesktop">
         <ul class="nav shadow-sm justify-content-center fixed-top h3 animate__animated animate__fadeInDown" style="background-color: rgb(254, 245, 237);">
             <li class="nav-item">
                 <a class="menu nav-link active text-decoration-none" style="color: rgb(243, 139, 160);" aria-current="page" href="#titulo">Inicio</a>
@@ -51,9 +78,10 @@
                 <a class="menu nav-link text-decoration-none" style="color: rgb(243, 139, 160);" href="#publicaciones">Publicaciones</a>
             </li>
             <li class="nav-item">
-                <a class="menu nav-link text-decoration-none" style="color: rgb(243, 139, 160);" href="#contacto">Contacto</a>
+                <a class="menu nav-link text-decoration-none" style="color: rgb(243, 139, 160);" href="./contact.html">Contacto</a>
             </li>
         </ul>   
+        
     </section>
  <!--------------------------------------------SOBRE MI----------------------------------------->
  <div id="sobreMi" class="container-fluid ">
@@ -143,7 +171,7 @@
             <div class="p-2 bd-highlight"><a target="_blank" href="https://www.instagram.com"><i class="fab fa-instagram logo" ></a></i></div>
             <div class="p-2 bd-highlight"><a target="_blank" href="https://www.facebook.com"><i class="fab fa-facebook logo"></a></i></div>
             <div class="p-2 bd-highlight"><a target="_blank" href="https://www.linkedin.com"><i class="fab fa-linkedin-in logo"></a></i></div>
-          </div>        
+        </div>        
           <form>
               <div id="Mensaje"></div>        
               <div class="row justify-content-center">
@@ -166,9 +194,13 @@
                 </div>
                 <button id="Enviar" onclick="formStorage()" class="btn btn-outline-success me-2 " type="button">Enviar</button>    
             </form>
-        </div>
+    </div>
+    <div class="futer">
+        <p>a</p>
+    </div>
     <!--------------------------------------------Librerias y JS----------------------------------------->
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="JS/form.js"></script>
 
 </body>

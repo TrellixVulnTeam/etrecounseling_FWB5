@@ -3,11 +3,26 @@
     
 // }
 
-.menu {
-    transition: transform 0.7s;
-}    
+.navbar-color {
+    background-color: rgb(255, 255, 255);
+}
 
-.menu:hover {
-    transform: translateX(10px);
-}    
+.collapse-color {
+    background-color: rgb(254, 245, 237);
+}
+
+.navbar-toggler {
+    background-color: #faeddf;
+}
+.btn-color {
+    background-color: #faeddf;
+    opacity: 1;
+}
+
+.fas , .fa-bars {
+    color: rgb(243, 139, 160);
+}
+.navbar-toggler-icon {
+    opacity: 0.5;
+}
 

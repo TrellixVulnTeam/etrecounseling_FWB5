@@ -16,25 +16,37 @@
     font-size: $f-size;
 }
 
-@media (min-width: 1024px) {.flex-fill {display: none;}}
+@media (min-width: 1024px) {
+    .flex-fill {display: none;}
+    #NavMobile{display: none;}
+}
+
 
 @media (max-width: 1024px) { /*iPad PRO*/
 
-
+    .NavDesktop {
+        display: none;
+    }
     .d-flex{
         display: flex;
         flex-direction: column;
         justify-content: center;
+        margin: 0 30px;
     }
     
     a  {@include TamañoFuente (20px);}
     h1, .tituloSecciones {@include TamañoFuente (30px);}
     h2 {@include TamañoFuente (25px);}
     h3 {@include TamañoFuente (25px);}
-    p {@include TamañoFuente (15px);}
+    p {@include TamañoFuente (18px);}
     
+    img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
     .imgSobreMi_1 {
-        margin-bottom: 20px;
     }
     
     .fab, .fa { /*Iconos Contacto, Facebook, IG y Linkedin*/
@@ -45,6 +57,54 @@
 
  @media (max-width: 768px) {
 
+    h1, .tituloSecciones {@include TamañoFuente (25px);}
+    h2 {@include TamañoFuente (24px);}
+
+    h3, 
+    p, 
+    a {@include TamañoFuente (15px);}
+
+    .d-flex{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        word-wrap: normal;
+        margin: 0 30px;
+
+    }
+    // .ocultar {
+    //     display: none;
+    // }
+    // img {
+    //     display: none;
+    //   }
+    
+
+ }
+
+@media screen and (max-width: 450px) {
+    h1, .tituloSecciones {@include TamañoFuente (25px);}
+    h2 {@include TamañoFuente (25px);}
+
+    h3, 
+    p, 
+    a {@include TamañoFuente (15px);}
+
+    .d-flex{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        word-wrap: normal;
+        letter-spacing: 1px;
+        margin: 0 20px;
+    }
+
+    .ocultar {display: none;}
+    img {display: none;}
+    
+}
+
+@media screen and (max-width: 375px) {
     h1, .tituloSecciones {@include TamañoFuente (25px);}
     h2 {@include TamañoFuente (20px);}
 
@@ -57,35 +117,11 @@
         flex-direction: row;
         justify-content: space-between;
         word-wrap: normal;
-    }
-    .ocultar {
-        display: none;
-    }
-    img {
-        display: none;
-      }
-    
-
- }
-
-@media screen and (max-width: 450px) {
-    h1, .tituloSecciones {@include TamañoFuente (10px);}
-    h2 {@include TamañoFuente (10px);}
-
-    h3, 
-    p, 
-    a {@include TamañoFuente (20px);}
-
-    .d-flex{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        word-wrap: normal;
-        padding:  300px;
+        letter-spacing: 0.5px;
+        margin: 0 15px;
     }
 
     .ocultar {display: none;}
     img {display: none;}
-    
-}
 
+}
