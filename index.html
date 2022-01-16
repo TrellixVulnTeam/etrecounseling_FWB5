@@ -20,6 +20,8 @@
     <link rel="shortcut icon" href="imagenes/favicon.jpeg">
     <!--FONTAWESOME-->
     <link rel="stylesheet" href="Fontawesome/css/fontawesome.css">
+    <!--BOOTSTRAP ICONS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
     <link href="Fontawesome/css/all.css" rel="stylesheet">
     <!-- ANIMATE LIBRARY -->
     <link rel="stylesheet" href="css/animate.css">
@@ -38,33 +40,37 @@
                     <h1 class="col animate__animated animate__fadeInDown display-1">être counseling</h1>
             </div>     
     </header>
-<!--------------------------------------------NAV----------------------------------------------->
+<!--------------------------------------------MOBILE NAV----------------------------------------------->
 <section id="NavMobile" class="shadow-sm fixed-top">
     <div class="collapse " id="navbarToggleExternalContent">
         <div class="collapse-color p-4">
             <ul class="d-flex flex-column justify-content-center h3 ">
                 <li>
-                    <a class="menu  nav-link active text-decoration-none" style="color: rgb(243, 139, 160);" aria-current="page" href="#titulo">Inicio</a>
+                    <a class="menu text-center  nav-link active text-decoration-none" style="color: rgb(243, 139, 160);" aria-current="page" href="#titulo"><p class="tituloNav">Inicio</p></a>
                 </li>
                 <li>
-                    <a class="menu  nav-link active text-decoration-none" style="color: rgb(243, 139, 160);" aria-current="page" href="#sobreMi">Sobre Mi</a>
+                    <a class="menu text-center nav-link active text-decoration-none" style="color: rgb(243, 139, 160);" aria-current="page" href="#sobreMi"><p class="tituloNav">Sobre Mi</p></a>
                 </li>
                 <li>
-                    <a class="menu  nav-link text-decoration-none" style="color: rgb(243, 139, 160);" href="#publicaciones">Publicaciones</a>
+                    <a class="menu text-center nav-link text-decoration-none" style="color: rgb(243, 139, 160);" href="#publicaciones"><p class="tituloNav">Publicaciones</p></a>
                 </li>
                 <li>
-                    <a class="menu  nav-link text-decoration-none" style="color: rgb(243, 139, 160);" href="./contact.html">Contacto</a>
+                    <a class="menu text-center nav-link text-decoration-none" style="color: rgb(243, 139, 160);" href="./contact.html"><p class="tituloNav">Contacto</p></a>
                 </li>
             </ul>   
         </div>
     </div>
     <nav class="navbar navbar-color">
         <div class="container-fluid">
+        <h2 class="tituloNav">être counseling</h2>
         <button class="btn btn-color" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
             <i class="fas fa-bars "></i>        </button>
         </div>
     </nav>
 </section>
+
+<!--------------------------------------------DESKTOP NAV----------------------------------------->
+
 
 <section class="NavDesktop">
         <ul class="nav shadow-sm justify-content-center fixed-top h3 animate__animated animate__fadeInDown" style="background-color: rgb(254, 245, 237);">
@@ -84,53 +90,51 @@
         
     </section>
  <!--------------------------------------------SOBRE MI----------------------------------------->
- <div id="sobreMi" class="container-fluid ">
-    <h2 class="tituloSecciones shadow-sm"><strong>Sobre Mi</strong></h2>
-</div>
-    <div class="d-flex row justify-content-center">
-            <div class="col ocultar">
-                <img class="img-fluid imgSobreMi_1" src="imagenes/girl-with-objects-around-her-by-oblik-studio.png" alt="imagen">
-            </div>
-            <div class="col  col-sm align-self-center ">
-                <h2>¡Hola a todes!</h2>
-                    <p>Hoy voy a presentarme 🙋🏽‍♀️ <br>
-                        Mi nombre es Agustina Maciel, y soy de Buenos Aires, Argentina. 
-                        Soy consultora psicológica, y también docente integradora en nivel primario, reikista y grafóloga en formación.
-                        Me siento feliz de poder presentarme, ir mostrando quién soy, visibilizar el hermoso enfoque de esta labor, y compartir con ustedes este espacio de escucha y aceptación que tengo para ofrecer.
-                        Acá también podrán conocer temas relacionados con la prevención en salud mental, vínculos y más sobre mí.
-                        </p>
-            </div>
+    <div id="sobreMi" class="container-fluid ">
+        <h2 class="tituloSecciones shadow-sm"><strong>Sobre Mi</strong></h2>
     </div>
-    <div class="d-flex row justify-content-center " style="min-height: 100vh;">
-
-            <div class="col col-sm align-self-center">
-                <h2>¿Por qué elijo ser counselor?</h2>
-                    <p class="text-start text-wrap">Quiero hablarles de por qué y para qué elegí hacer esto.
-                    <br>
-                    ⚡Fue un largo recorrido interno, pero había una necesidad de búsqueda y la pregunta que resonaba mucho en mí era: ¿para qué estoy acá?
-                    Siento que tengo una misión, pero, ¿Cuál es?
-                    Después de varias sesiones de reiki, tests vocacionales, cursos, y tantas otras cosas…
-                    Encontré este mundo: el de la relación de ayuda.
-                    Comencé la carrera de Consultor Psicológico y descubrí que era innato en mí darle un espacio de escucha a le otre, que tenía una fascinación por entender la conducta humana, sus problemáticas, conflictos y todo lo que lleva al sujeto a ser tan complejo e interesante. Así empezó este camino de formación constante.<br>
-                    Gracias por estar del otro lado, por leer un poco más de quien soy y que vengo a ofrecer.
-                    Recuerden que por cualquier consulta pueden hablarme por DM para coordinar un encuentro y empezar este camino de autoconocimiento y análisis propio.
-                    Estoy para ayudarte 🙌🏼<br><br>
-                    <em>Agustina.</em></p>
-            </div>        
-            <div class="col ocultar align-self-center">
-                <img class="img-fluid" src="imagenes/girl-sitting-on-books-with-laptop-by-oblik-studio.png" alt="imagen">
-            </div>
-    </div>
-
+        <div class="d-flex row justify-content-center">
+                <div id="orderA" class="col ocultar">
+                    <img class="img-fluid" src="imagenes/girl-with-objects-around-her-by-oblik-studio.png" alt="imagen">
+                </div>
+                <div id="orderB" class="col col-sm align-self-center ">
+                    <h2>¡Bienvenidos a todos y todas!</h2>
+                        <p>Hoy voy a presentarme 🙋🏽‍♀️ <br>
+                            Mi nombre es Agustina Maciel, y soy de Buenos Aires, Argentina. 
+                            Soy consultora psicológica, y también docente integradora en nivel primario, reikista y grafóloga en formación.
+                            Me siento feliz de poder presentarme, ir mostrando quién soy, visibilizar el hermoso enfoque de esta labor, y compartir con ustedes este espacio de escucha y aceptación que tengo para ofrecer.
+                            Acá también podrán conocer temas relacionados con la prevención en salud mental, vínculos y más sobre mí.
+                            </p>
+                </div>
+        </div>
+        <div class="d-flex row justify-content-center " style="min-height: 100vh;">
+                <div id="orderC" class="col col-sm align-self-center">
+                    <h2>¿Por qué elijo ser counselor?</h2>
+                        <p class="text-start text-wrap">Quiero hablarles de por qué y para qué elegí hacer esto.
+                        <br>
+                        ⚡Fue un largo recorrido interno, pero había una necesidad de búsqueda y la pregunta que resonaba mucho en mí era: ¿para qué estoy acá?
+                        Siento que tengo una misión, pero, ¿Cuál es?
+                        Después de varias sesiones de reiki, tests vocacionales, cursos, y tantas otras cosas…
+                        Encontré este mundo: el de la relación de ayuda.
+                        Comencé la carrera de Consultor Psicológico y descubrí que era innato en mí darle un espacio de escucha a le otre, que tenía una fascinación por entender la conducta humana, sus problemáticas, conflictos y todo lo que lleva al sujeto a ser tan complejo e interesante. Así empezó este camino de formación constante.<br>
+                        Gracias por estar del otro lado, por leer un poco más de quien soy y que vengo a ofrecer.
+                        Recuerden que por cualquier consulta pueden hablarme por DM para coordinar un encuentro y empezar este camino de autoconocimiento y análisis propio.
+                        Estoy para ayudarte 🙌🏼<br><br>
+                        <em>Agustina.</em></p>
+                </div>        
+                <div id="orderD" class="col ocultar align-self-center">
+                    <img class="img-fluid" src="imagenes/girl-sitting-on-books-with-laptop-by-oblik-studio.png" alt="imagen">
+                </div>
+        </div>
     <!--------------------------------------------PUBLICACIONES----------------------------------------->
     <div id="publicaciones" class="container-fluid">
             <h2 class="tituloSecciones shadow-sm"><strong>Publicaciones</strong></h2>
     </div>
         <div class="d-flex row justify-content-center">
-                <div class="col ocultar align-self-center">
+                <div id="orderA" class="col ocultar align-self-center">
                     <img class="img-fluid" src="imagenes/girl-sitting-on-armchair-with-laptop-by-oblik-studio-B.png">
                 </div>
-                <div class="col align-self-center">
+                <div id="orderB" class="col align-self-center">
                     <h2>¿Qué es el counseling?</h2>
                     <p>
                         La gran pregunta que muches deben hacerse es: ¿qué es el counseling?
@@ -144,7 +148,7 @@
 
         </div>
         <div class="d-flex row justify-content-center">
-                <div class="col ">
+                <div id="orderC" class="col">
                     <h2>¿Por qué deberias elegir el counseling?</h2>
                     <p>
                     ¡Hola a todes!.
@@ -157,7 +161,7 @@
                     Si esto te resuena y estas necesitando un espacio para vos, contáctame.
                     </p>
                 </div>
-                <div class="col ocultar align-self-center">
+                <div id="orderD" class="col ocultar align-self-center">
                     <img class="img-fluid" src="imagenes/girl-sitiing-on-table-conducting-an-interview-by-oblik-studio-A.png"> 
                 </div>
         </div>
@@ -167,7 +171,7 @@
         <h2 class="tituloSecciones shadow-sm"><strong>Contactame!</strong></h2>
     </div>
     <div class="container form container-fluid"> 
-        <div class="d-flex justify-content-between bd-highlight mb-2">
+        <div class="d-flex-icons justify-content-between bd-highlight mb-2">
             <div class="p-2 bd-highlight"><a target="_blank" href="https://www.instagram.com"><i class="fab fa-instagram logo" ></a></i></div>
             <div class="p-2 bd-highlight"><a target="_blank" href="https://www.facebook.com"><i class="fab fa-facebook logo"></a></i></div>
             <div class="p-2 bd-highlight"><a target="_blank" href="https://www.linkedin.com"><i class="fab fa-linkedin-in logo"></a></i></div>
@@ -195,9 +199,11 @@
                 <button id="Enviar" onclick="formStorage()" class="btn btn-outline-success me-2 " type="button">Enviar</button>    
             </form>
     </div>
-    <div class="futer">
-        <p>a</p>
-    </div>
+
+    <!--------------------------------------------FOOTER----------------------------------------->
+        <div class="futer shadow">
+            <p class="p-footer p-3">&copy;2022 Copyright: Être Counseling</p>
+        </div>
     <!--------------------------------------------Librerias y JS----------------------------------------->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
