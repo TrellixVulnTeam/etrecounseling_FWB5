@@ -32,49 +32,44 @@
         <!--TITULO-->
         <title>Être Counseling - Contacto</title>
     </head>
-    <section id="contact">
-            <div id="contacto" class="container-fluid align-self-start">
-                <h2 class="tituloSecciones shadow-sm contacto"><strong>Contactame!</strong></h2>
-            </div>
-            <div class="container form container-fluid"> 
-                <div class="d-flex justify-content-between bd-highlight mb-2">
-                    <div class="p-2 bd-highlight"><a target="_blank" href="https://www.instagram.com"><i class="fab fa-instagram logo" ></a></i></div>
-                    <div class="p-2 bd-highlight"><a target="_blank" href="https://www.facebook.com"><i class="fab fa-facebook logo"></a></i></div>
-                    <div class="p-2 bd-highlight"><a target="_blank" href="https://www.linkedin.com"><i class="fab fa-linkedin-in logo"></a></i></div>
-                </div>  
-                <!--Form-->      
-                <form>
-                    <div id="Mensaje">
-
-                    </div>     
-                    <div class="row justify-content-center">
+    <header id="contacto">
+            <h2 class="tituloSecciones  shadow-sm"><strong>Contactame!</strong></h2>
+    </header>
+        <div class="container form container-fluid"> 
+            <div class="d-flex responsive-icons justify-content-between bd-highlight mb-2">
+                <div class="p-2 bd-highlight"><a target="_blank" href="https://www.instagram.com"><i class="fab fa-instagram logo" ></a></i></div>
+                <div class="p-2 bd-highlight"><a target="_blank" href="https://www.facebook.com"><i class="fab fa-facebook logo"></a></i></div>
+                <div class="p-2 bd-highlight"><a target="_blank" href="https://www.linkedin.com"><i class="fab fa-linkedin-in logo"></a></i></div>
+            </div>        
+              <form>
+                  <div id="Mensaje"></div>        
+                  <div class="row justify-content-center">
+                      <div class="mb-3">
+                          <label for="Name" class="form-label overflow-hidden"><p class="h2 colorForm">Nombre: </p></label>
+                          <input type="text" class="form-control" id="Name" aria-describedby="Name" placeholder="Nombre" required>
+                        </div>  
                         <div class="mb-3">
-                            <label for="Name" class="form-label overflow-hidden"><p class="h2 colorForm">Nombre: </p></label>
-                            <input type="text" class="form-control" id="Name" aria-describedby="Name" placeholder="Nombre" required>
-                            </div>  
-                            <div class="mb-3">
-                                <label for="LastName" class="form-label h3 overflow-hidden"><p class="h2 colorForm">Apellido: </p></label>
-                                <input type="text" class="form-control" id="LastName" aria-describedby="LastName" placeholder="Apellido">
-                            </div>  
-                            <div class="mb-3">
-                                <label for="exampleInputEmail1" class="form-label h3 overflow-hidden"><p class="h2 colorForm">Email: </p></label>
-                                <input type="email" class="form-control" id="Email" aria-describedby="emailHelp" placeholder="Tu email" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="mensaje" class="form-label h3 overflow-hidden"><p class="h2 colorForm">Mensaje: </p></label>
-                                <textarea class="form-control " id="mensaje" rows="3"></textarea>            
-                            </div>
+                            <label for="LastName" class="form-label h3 overflow-hidden"><p class="h2 colorForm">Apellido: </p></label>
+                            <input type="text" class="form-control" id="LastName" aria-describedby="LastName" placeholder="Apellido">
+                        </div>  
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label h3 overflow-hidden"><p class="h2 colorForm">Email: </p></label>
+                            <input type="email" class="form-control" id="Email" aria-describedby="emailHelp" placeholder="Tu email" required>
                         </div>
-                        <button id="Enviar" onclick="formStorage()" class="btn btn-outline-success me-2 " type="button">Enviar</button>    
-                    </form>
-            </div>
-    </section>        
-    <section id="footer">
-        <div class="futer shadow">
-            <p class="p-footer p-3">&copy;2022 Copyright: Être Counseling</p>
+                        <div class="mb-3">
+                            <label for="mensaje" class="form-label h3 overflow-hidden"><p class="h2 colorForm">Mensaje: </p></label>
+                            <textarea class="form-control " id="mensaje" rows="3"></textarea>            
+                        </div>
+                    </div>
+                    <button id="Enviar" onclick="formStorage()" class="btn btn-outline-success me-2 " type="button">Enviar</button>    
+                </form>
         </div>
-    </section>
-    <body>
+    
+        <!--------------------------------------------FOOTER----------------------------------------->
+            <div class="futer shadow">
+                <p class="p-footer p-3">&copy;2022 Copyright: Être Counseling</p>
+            </div>
+        <body>
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="JS/form.js"></script>
 

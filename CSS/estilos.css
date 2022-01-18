@@ -119,16 +119,13 @@ form {
   background-color: white;
   overflow-x: hidden;
   display: flex;
-  justify-content: center;
-}
+  justify-content: center; }
 
 .p-footer, .tituloNav {
   font-family: "Varela Round", sans-serif;
-  color: rgb(248, 95, 126);
+  color: #f85f7e;
   font-weight: bolder;
-  margin: 0;
-}
-
+  margin: 0; }
 
 /****************MEDIA QUERY****************/
 @media (min-width: 1024px) {
@@ -159,22 +156,15 @@ form {
   img {
     display: flex;
     flex-direction: column;
-    justify-content: center; 
-   }
-
-   #orderA{
-     order: 3;
-   }
-   #orderB{
-     order: 4;
-   }
-   #orderC{
-     order:2;
-   }
-   #orderD{
-     order:1;
-   }
-
+    justify-content: center; }
+  #orderA {
+    order: 3; }
+  #orderB {
+    order: 4; }
+  #orderC {
+    order: 2; }
+  #orderD {
+    order: 1; }
   .fab, .fa {
     /*Iconos Contacto, Facebook, IG y Linkedin*/
     font-size: 50px; } }
@@ -193,31 +183,20 @@ form {
     flex-direction: column;
     justify-content: space-between;
     word-wrap: normal;
-    margin: 0 30px; } }
-  
-  .d-flex-icons  {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      word-wrap: normal;
-      margin: 0 15px; 
-    }
-  
-
-    #orderA{
-      order: 3;
-    }
-    #orderB{
-      order: 4;
-    }
-    #orderC{
-      order:2;
-    }
-    #orderD{
-      order:1;
-      padding: 0;
-    }
- 
+    margin: 0 30px; }
+  .responsive-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 15px; }
+  #orderA {
+    order: 3; }
+  #orderB {
+    order: 4; }
+  #orderC {
+    order: 2; }
+  #orderD {
+    order: 1; } }
 
 @media screen and (max-width: 450px) {
   h1, .tituloSecciones {
@@ -235,17 +214,13 @@ form {
     word-wrap: normal;
     letter-spacing: 1px;
     margin: 0 20px; }
-  
-  .d-flex-icons  {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      word-wrap: normal;
-      letter-spacing: 0.5px;
-      margin: 0 15px; 
-  }
-  
-
+  .responsive-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    word-wrap: normal;
+    letter-spacing: 0.5px;
+    margin: 0 15px; } }
 
 @media screen and (max-width: 375px) {
   h1, .tituloSecciones {
@@ -258,22 +233,23 @@ form {
     font-size: 15px; }
   .d-flex-icons  {
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    word-wrap: normal;
+    letter-spacing: 0.5px;
+    margin: 0 15px; }
+  .responsive-icons {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     word-wrap: normal;
     letter-spacing: 0.5px;
-    margin: 0 15px; 
-  }
-
-  #orderA{
-    order: 3;
-  }
-  #orderB{
-    order: 4;
-  }
-  #orderC{
-    order:2;
-  }
-  #orderD{
-    order:1;
-  }
+    margin: 0 15px; }
+  #orderA {
+    order: 3; }
+  #orderB {
+    order: 4; }
+  #orderC {
+    order: 2; }
+  #orderD {
+    order: 1; } }

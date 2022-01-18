@@ -29,7 +29,7 @@
     }
     .d-flex{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
         margin: 0 30px;
     }
@@ -46,7 +46,18 @@
         justify-content: center;
 
     }
-    .imgSobreMi_1 {
+    
+    #orderA {
+        order: 3;
+    }
+    #orderB {
+        order: 4;
+    }
+    #orderC{
+        order:2;
+    }
+    #orderD{
+        order:1
     }
     
     .fab, .fa { /*Iconos Contacto, Facebook, IG y Linkedin*/
@@ -66,18 +77,32 @@
 
     .d-flex{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-between;
         word-wrap: normal;
         margin: 0 30px;
 
     }
-    // .ocultar {
-    //     display: none;
-    // }
-    // img {
-    //     display: none;
-    //   }
+
+    .responsive-icons  {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0 15px; 
+      }
+
+    #orderA {
+        order: 3;
+    }
+    #orderB {
+        order: 4;
+    }
+    #orderC{
+        order:2;
+    }
+    #orderD{
+        order:1
+    }
     
 
  }
@@ -92,15 +117,22 @@
 
     .d-flex{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-between;
         word-wrap: normal;
         letter-spacing: 1px;
         margin: 0 20px;
     }
 
-    .ocultar {display: none;}
-    img {display: none;}
+    .responsive-icons  {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        word-wrap: normal;
+        letter-spacing: 0.5px;
+        margin: 0 15px; 
+    }
+
     
 }
 
@@ -114,14 +146,33 @@
 
     .d-flex{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-between;
         word-wrap: normal;
         letter-spacing: 0.5px;
         margin: 0 15px;
     }
 
-    .ocultar {display: none;}
-    img {display: none;}
+    .responsive-icons  {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        word-wrap: normal;
+        letter-spacing: 0.5px;
+        margin: 0 15px; 
+      }
+    
+      #orderA{
+        order: 3;
+      }
+      #orderB{
+        order: 4;
+      }
+      #orderC{
+        order:2;
+      }
+      #orderD{
+        order:1;
+      }
 
 }
